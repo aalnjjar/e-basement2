@@ -1,0 +1,114 @@
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    position: absolute;
+  }  
+  .custom-nav{
+    border: none;
+    background-color: #ffffff
+  }
+   .act{
+  border-bottom: 3px solid #438dcb !important}
+  .navbar-brand {
+    padding: 0px;
+  }
+  .navbar-brand>img {
+    height: 100%;
+    width: auto;
+    padding: 7px 14px;
+  }
+    .custom-nav .navbar-brand {
+      height: 70px;
+    }
+    
+    .custom-nav .nav >li >a {
+      padding-top: 30px;
+      font-size: 18px;
+      color: #242c39    
+  }
+    .custom-nav .navbar-toggle {
+      padding: 10px;
+      margin: 25px 15px 25px 0;
+    }
+    
+  .cool-link {
+    color: #438dcb;
+    text-decoration: none;
+  }
+  
+  .cool-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #438dcb;
+    transition: width 0.3s;
+  }
+  
+  .cool-link:hover::after {
+    width: 100%;
+    /* //transition: width .3s; */
+  }
+  
+  /* rotate settings */
+  
+  @-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes rotating {
+    from {
+      -ms-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    to {
+      -ms-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .rotating {
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+    /* CSS Transform Align Navbar Brand Text ... This could also be achieved with table / table-cells */
+    .navbar-alignit .navbar-header {
+          -webkit-transform-style: preserve-3d;
+      -moz-transform-style: preserve-3d;
+      transform-style: preserve-3d;
+      height: 50px;
+    }
+    .navbar-alignit .navbar-brand {
+        top: 50%;
+        display: block;
+        position: relative;
+        height: auto;
+        transform: translate(0,-50%);
+        margin-right: 15px;
+      margin-left: 15px;
+    }
+    .navbar-nav>li>.dropdown-menu {
+        z-index: 9999;
+    }
+    .menubar li {
+      text-align: right
+    }
+    .navbar-nav>li{
+      padding: 0 3px;
+    }

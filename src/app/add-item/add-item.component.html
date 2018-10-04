@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-6">   
+            <div class="input-field">
+                <input type="text" id="name" required />
+                <label for="name">product name:</label>
+              </div>
+              <br>
+            <div class="input-group col-xs-12 dropdown-edit" > 
+                <p-dropdown  [options]="Categories" [(ngModel)]="selectedCategory" placeholder="Select a category" [filter]="true" optionLabel="name" [showClear]="true"></p-dropdown>
+            </div>
+            <br>
+            <div class="input-group col-xs-12 dropdown-edit" > 
+                    <p-dropdown [options]="subCategories" [(ngModel)]="selectedsubCategory" placeholder="Select a subcategory" [filter]="true" optionLabel="name" [showClear]="true"></p-dropdown>
+            </div>
+            <br>
+            <div class="input-field col-xs-12">
+                    <div class="col-xs-4">
+                          <input type="text" id="height" required />
+                          <label for="height">height:</label>
+                    </div>
+                    <div class="col-xs-4">
+                          <input type="text" id="width" required />
+                          <label for="width">width:</label>
+                    </div>
+                    <div class="col-xs-4">
+                          <input type="text" id="length" required />
+                          <label for="length">length:</label>
+                    </div>             
+                    </div>
+                    <br><br><br>
+                    <div class="form-group">
+                        <label for="comment">Comment:</label>
+                        <textarea class="form-control" rows="5" id="comment"></textarea>
+                      </div>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <div class="input-field">
+                <input type="text" id="weight" required />
+                <label for="weight">Weight (kg):</label>
+              </div>
+              <br>
+            <div class="input-group col-md-12">
+                <p-calendar placeholder="Duration of Use" [(ngModel)]="value"></p-calendar>
+            </div>  
+                  <br>
+                  <div class="input-group col-md-12 status" >
+                        <label class="col-xs-4">status</label>
+                        <div class="col-xs-8 col-md-8">
+                            <p-radioButton class="col-md-6 col-xs-12" name="group1" value="Option 1" label="New" [(ngModel)]="val1" inputId="opt1"></p-radioButton> 
+                             <p-radioButton class="col-md-6 col-xs-12" name="group1" value="Option 2" label="Used" [(ngModel)]="val1" inputId="opt2"></p-radioButton>
+                        </div>  
+                      </div> 
+                      <br>
+                      <br>
+            <div class="form-froup">
+                <h4 class="first">product Images</h4>
+                <p-fileUpload name="demo[]" url="./upload.php" (onUpload)="onUpload($event)"
+                        multiple="multiple" accept="image/*" maxFileSize="1000000" maxFileLimit="2">
+                <ng-template pTemplate="content">
+                    <ul *ngIf="uploadedFiles.length">
+                        <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                    </ul>
+                </ng-template>
+        </p-fileUpload>
+            </div>
+        </div>
+    </div>
+    <div class="col-xs-12">
+        <div class="checkbox col-xs-12 col-md-6">
+            <label><input type="checkbox" value="">read and agree for <a href="#">terms and Policy</a> </label>
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <button class="btn btn-default btn-success">Add product</button>
+        </div>
+    </div>
+</div>

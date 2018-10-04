@@ -1,0 +1,119 @@
+ /* Create your style on here */
+.padding-0{
+    padding: 0!important
+}
+ .margin-10{
+    margin-top: 10px;
+}
+.padding-15{
+    padding: 15px
+}
+.padding-top-bottom-0{
+    padding-top: 0;
+    padding-bottom: 0
+}
+.sign-header{
+    background-color: #72b943;
+    border-bottom: none
+}
+.sign-text span{
+    background-color: #fff;
+    color: #438dcb
+}
+.sign-text:before{
+    background-color: #fff
+}
+.btn-theme{
+        background-color: #72b943;
+    border-color:#72b943;
+}
+.login-page{
+    /* background-image: url(../../img/.jpg); */
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    min-height: 90vh
+}
+.brandLogo {
+    background-color: transparent!important
+}
+#sign-wrapper{
+width: 100%}
+#sign-wrapper form{
+    background-color: rgba(240, 240, 241, .5);
+    padding: 25px;
+}
+
+.sign-footer a{
+    color: #438dcb;
+    background-color: #fff;
+    padding: 5px
+}
+.text-muted,#sign-wrapper .ckbox label{
+    color: #000;
+    font-weight:600
+}
+.btn-theme{
+    background-color: #fff;
+    color: #72b943;
+    border: none
+}
+.btn-theme:hover{
+     background-color: #72b943;
+    color: #fff;
+    transition: .4s
+}
+ .fb-login,.twt-login{
+    font-size: 15px!important;
+    padding: 5px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.fb-login{
+        background-color: #3B559F;
+}
+.twt-login{
+ background-color: #2AA9E0
+}
+.twt-login:hover{
+    color: #fff;
+    text-decoration: none
+}
+.custom-login-navbar .navbar-brand {
+  height: 85px;
+}
+.custom-login-navbar .navbar-brand img{
+    height: 100%
+}
+.custom-login-navbar .nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#username-error {
+    left: -166px
+}
+.page-footer{
+    background-color: #222222;
+    padding: 15px;
+    font-size: 16px;
+    color: #ddd;
+}
+.page-footer a{
+    color: #ddd
+}
+.lost-pass-footer{
+    position: absolute;
+    bottom: 0;
+}
+.chosen-container-single .chosen-single{
+    height: 46px!important;
+    border: none!important;
+    padding: 10px;
+}
+.chosen-container-single .chosen-single div b{
+    background-position: 0 14px!important
+}
+.langSelect,.form-group{
+    height: 46px!important
+}
