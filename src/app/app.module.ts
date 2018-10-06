@@ -19,7 +19,9 @@ import {DropdownModule} from 'primeng/dropdown';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {CalendarModule} from 'primeng/calendar';
 import {FileUploadModule} from 'primeng/fileupload';
+import {DialogModule} from 'primeng/dialog';
 import { AddItemComponent } from './add-item/add-item.component';
+import { ProductsComponent } from './products/products.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,6 +32,7 @@ import { AddItemComponent } from './add-item/add-item.component';
     SidebarComponent,
     HomePageComponent,
     AddItemComponent,
+    ProductsComponent,
   ],
   exports: [
     LoginHeaderComponent
@@ -47,7 +50,8 @@ import { AddItemComponent } from './add-item/add-item.component';
     DropdownModule,
     RadioButtonModule,
     CalendarModule,
-    FileUploadModule
+    FileUploadModule,
+    DialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

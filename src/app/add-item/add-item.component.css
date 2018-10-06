@@ -1,6 +1,9 @@
 *{
   text-transform: capitalize;
 }
+.add-item {
+  margin-top: 15px;
+}
 .btn {
   border-radius: 0px !important;
   background: #72B943;
@@ -60,14 +63,11 @@ input:valid ~ label {
  .status{
    margin-top: 7px
  }
- body .ui-fileupload .ui-fileupload-buttonbar, body .ui-fileupload .ui-fileupload-content{
-   border: none;
- }
- .ui-fileupload button:nth-child(2){
-   display: none;
- }
   .ui-fileupload-content {
   border: none;
   height: 100px;
   overflow: auto;
+}
+.star{
+  color: red
 }

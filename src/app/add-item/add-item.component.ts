@@ -1,5 +1,4 @@
 import { Component, OnInit , ViewEncapsulation} from '@angular/core';
-import {SelectItem} from 'primeng/api';
 import {MessageService} from 'primeng/components/common/messageservice';
 
 interface Category {
@@ -26,6 +25,13 @@ export class AddItemComponent implements OnInit {
   subCategories: SubCategory[];
   selectedCategory: Category;
   selectedsubCategory: SubCategory;
+  // dialog
+  display = false;
+
+  showDialog() {
+      this.display = true;
+  }
+
   constructor(private messageService: MessageService) {
     this.Categories = [
       {name: 'phones', code: 'ph'},
@@ -42,7 +48,6 @@ export class AddItemComponent implements OnInit {
     for (const file of event.files) {
         this.uploadedFiles.push(file);
     }
-
     this.messageService.add({severity: 'info', summary: 'File Uploaded', detail: ''});
 }
   ngOnInit() {
