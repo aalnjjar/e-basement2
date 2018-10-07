@@ -23,15 +23,15 @@
               "src/assets"
             ],
             "styles": [
-              "../E-basement/node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/primeicons/primeicons.css",
               "node_modules/primeng/resources/themes/nova-light/theme.css",
               "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": [
-              "../E-basement/node_modules/jquery/dist/jquery.min.js",
-              "../E-basement/node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "../E-basement/src/assets/js/jquery.validate.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/js/jquery.validate.min.js",
               "../E-basement/src/assets/js/blankon.sign.js",
               "../E-basement/src/assets/css/chosen/chosen.jquery.min.js"
             ]
